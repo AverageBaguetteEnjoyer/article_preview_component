@@ -17,7 +17,7 @@ window.addEventListener("keydown", (e) => {
 })
 
 window.addEventListener("click", (e) => {
-    if (!shareBtn.contains(e.target) && shareBtn.getAttribute("aria-expanded") === "true") {
+    if (!shareBtn.contains(e.target) && !sharePopup.contains(e.target) && shareBtn.getAttribute("aria-expanded") === "true") {
         toggleSharePopup();
     }
 });
