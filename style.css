@@ -4,6 +4,7 @@
     --clr-font-primary: oklch(44.675% 0.03841 259.945);
     --clr-font-secondary: oklch(59.413% 0.04255 255.721);
     --clr-font-third: oklch(74.42% 0.0347 252.583);
+    --clr-link-hover: oklch(34.262% 0.13674 266.49);
     --bg-share-btn: oklch(95.834% 0.01041 248.177);
     --bg-share-btn-active: oklch(44.675% 0.03841 259.945);
     --bg-share-popup: oklch(44.675% 0.03841 259.945);
@@ -196,11 +197,21 @@ main {
     outline-offset: .375rem;
 }
 
+.article__content h1 a,
+.article__author-profile-link {
+    transition: color var(--animation-speed);
+}
+
 .article__content h1 a:focus-visible,
 .article__author-profile-link:focus-visible,
 .article__share-btn:focus-visible {
     outline: 2px solid var(--clr-outline-focus-primary);
     outline-offset: .25rem;
+}
+
+.article__content h1 a:hover,
+.article__author-profile-link:hover {
+    color: var(--clr-link-hover);
 }
 
 @media (max-width: 54.375rem) {
