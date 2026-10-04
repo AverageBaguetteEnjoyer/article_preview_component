@@ -24,8 +24,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/article-preview-card-component-GyELSrib72
+- Live Site URL: https://articlepreview-abe.netlify.app
 
 ## Author
 
