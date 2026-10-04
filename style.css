@@ -7,6 +7,8 @@
     --bg-share-btn: oklch(95.834% 0.01041 248.177);
     --bg-share-btn-active: oklch(44.675% 0.03841 259.945);
     --bg-share-popup: oklch(44.675% 0.03841 259.945);
+    --clr-outline-focus-primary: oklch(44.675% 0.03841 259.945);
+    --clr-outline-focus-secondary: oklch(100% 0.00011 271.152);
     --font-family: "Manrope", sans-serif;
     --animation-speed: .25s;
 }
@@ -186,6 +188,19 @@ main {
     display: flex;
     gap: 1rem;
     align-items: center;
+    z-index: 1;
+}
+
+.article__share-links a:focus-visible {
+    outline: 2px solid oklch(100% 0.00011 271.152);
+    outline-offset: .375rem;
+}
+
+.article__content h1 a:focus-visible,
+.article__author-profile-link:focus-visible,
+.article__share-btn:focus-visible {
+    outline: 2px solid var(--clr-outline-focus-primary);
+    outline-offset: .25rem;
 }
 
 @media (max-width: 54.375rem) {
